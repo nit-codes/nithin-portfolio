@@ -1,0 +1,1 @@
+Hello, welcome to my portfolio. It is basically built to showcase my work, my achievements and about myself. The whole concept of this website (designing, animations, content) is mine and I've built it from scratch.

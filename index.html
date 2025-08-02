@@ -1,0 +1,232 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Nithin's Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/theme-light.css" />
+    <style>
+      .tile-card:hover {
+        box-shadow: 0 8px 32px rgba(0, 170, 255, 0.18), 0 3px 12px rgba(30, 63, 90, 0.10);
+        transform: translateY(-6px) scale(1.025);
+        background-color: #e0f4ff;
+      }
+      /* trial */
+
+      .tile-card {
+    transform-origin: center;
+    margin-bottom: 2em;
+  }
+
+  /* Reduce size of large tiles */
+  .tiles article:nth-child(4n - 1),
+  .tiles article:nth-child(4n - 2) {
+    width: 55% !important;
+  }
+
+  /* Reduce size of others slightly */
+  .tiles article:nth-child(4n),
+  .tiles article:nth-child(4n - 3) {
+    width: 40% !important;
+  }
+
+  /* Optional: make sure tiles are centered within container */
+  .tiles-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2em 1em;
+  }
+
+  .tiles {
+    justify-content: center;
+    column-gap: 2rem;
+    row-gap: 2rem;
+  }
+
+    </style>
+  </head>
+  <body class="is-preload">
+    <div id="wrapper">
+
+      <!-- Header -->
+      <header id="header" class="alt">
+        <!-- <a href="index.html" class="logo"><strong>My Portfolio</strong></a> -->
+        <nav>
+          <a href="#menu">Menu</a>
+        </nav>
+      </header>
+
+      <!-- Menu -->
+      <nav id="menu">
+        <ul class="links">
+          <!-- <li><a href="index.html">Home</a></li> -->
+          <li><a href="aboutMe.html">About Me</a></li>
+          <li><a href="certificates.html">Certificates</a></li>
+          <li><a href="projects.html">Projects</li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Banner -->
+      <section id="banner" class="major">
+        <div class="inner">
+          <!-- <div class="inner animated-banner">
+  <header class="major">
+    <h1>Hi, I'm Nithin 👋</h1>
+  </header>
+  <div class="typed-text"></div>
+</div> -->
+	  <div class="inner banner-animated">
+  <header class="major">
+    <h1 class="slide-in-title">
+      Hi, I'm Nithin <span class="wave loop">👋</span>
+    </h1>
+  </header>
+  <div class="typed-text"></div>
+</div>
+</div>
+      </section>
+
+      <!-- Main -->
+      <div id="main">
+        <section class="tiles-section reveal-section">
+          <div class="tiles-heading">
+            <h2>Explore My Portfolio</h2>
+            <p>Navigate through my story, achievements, projects, and get in touch!</p>
+          </div>
+          <div class="tiles-grid">
+            <article class="tile-card reveal-tile">
+              <span class="image">
+                <img src="images/about.png" alt="About Me" />
+              </span>
+              <header class="major">
+                <h3><a href="aboutMe.html" class="link">About Me</a></h3>
+                <p>Who I am and what I love to do</p>
+              </header>
+            </article>
+            <article class="tile-card reveal-tile">
+              <span class="image">
+                <img src="./images/certificate.png" alt="Certificates" />
+              </span>
+              <header class="major">
+                <h3><a href="certificates.html" class="link">Certificates</a></h3>
+                <p>My achievements and credentials</p>
+              </header>
+            </article>
+            <article class="tile-card reveal-tile">
+              <span class="image">
+                <img src="images/project.png" alt="Projects" />
+              </span>
+              <header class="major">
+                <h3><a href="./projects.html" class="link">Projects</a></h3>
+                <p>Some of the projects I’ve built</p>
+              </header>
+            </article>
+            <article class="tile-card reveal-tile">
+              <span class="image">
+                <img src="images/contact.png" alt="Contact" />
+              </span>
+              <header class="major">
+                <h3><a href="./contact.html" class="link">Contact</a></h3>
+                <p>Reach out to work or collaborate</p>
+              </header>
+            </article>
+          </div>
+        </section>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <div class="scroll-indicator" id="scrollIndicator">
+        Scroll to explore more
+      </div>
+
+      <!-- Footer -->
+      <footer id="footer">
+        <ul class="icons">
+          <li><a href="https://mail.google.com/mail/?view=cm&to=nby.nithin@gmail.com" class="icon solid fa-envelope" target="_blank"><span class="label">Email</span></a></li>
+          <li><a href="https://www.linkedin.com/in/nithin-b-y-0484a0236" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+          <li><a href="https://github.com/nit-codes" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+          <li><a href="https://www.instagram.com/nithin.b.y/" class="icon brands fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
+        </ul>
+        <ul class="copyright">
+          <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">
+  <img alt="Creative Commons License" style="border-width:0; height: 30px;" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" />
+</a>
+<p style="font-size: 0.85em;">
+  This portfolio by <strong>Nithin B Y</strong> is licensed under 
+  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a>.
+</p>
+
+          <li><p style="font-size: 0.8em;">© 2025 Nithin B Y</p>
+</li>
+        </ul>
+      </footer>
+
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+	<script>
+  window.addEventListener("load", function () {
+    const wave = document.querySelector(".wave");
+    const title = document.querySelector(".slide-in-title");
+
+    // Trigger wave emoji once animation of the title ends
+    title.addEventListener("animationend", () => {
+      wave.classList.add("wave-once");
+    });
+
+    // Scroll indicator functionality
+    const scrollIndicator = document.getElementById('scrollIndicator');
+    
+    // Hide scroll indicator when user scrolls down
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 100) {
+        scrollIndicator.classList.add('hidden');
+      } else {
+        scrollIndicator.classList.remove('hidden');
+      }
+    });
+
+    // Hide scroll indicator when user clicks on it
+    scrollIndicator.addEventListener('click', function() {
+      scrollIndicator.classList.add('hidden');
+    });
+
+    // Hide scroll indicator after 5 seconds
+    setTimeout(function() {
+      scrollIndicator.classList.add('hidden');
+    }, 5000);
+  });
+</script>
+
+<!-- Typed.js for subheading -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+  new Typed(".typed-text", {
+  strings: [ "Tech Enthusiast ⚙️", "Problem Solver 🔧"],
+  typeSpeed: 60,
+  backSpeed: 30,
+  startDelay: 1500,
+  loop: true,
+  showCursor: false // 👈 disables the blinking cursor
+});
+
+</script>
+<script>
+  document.addEventListener("contextmenu", (e) => e.preventDefault());
+</script>
+
+
+	
+  </body>
+</html>

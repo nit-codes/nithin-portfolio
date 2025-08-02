@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Certificates</title>
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/theme-light.css" />
+
+  <style>
+    .certificates-section {
+      padding: 4em 2em;
+      background: #f5f9fc;
+    }
+
+    .certificates-title {
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 1.5em;
+      color: #1e3f5a;
+    }
+
+    .certificates-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2em;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .certificate-card {
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+      padding: 1.5em;
+      transition: transform 0.3s ease;
+    }
+
+    .certificate-card:hover {
+      box-shadow: 0 8px 32px rgba(0, 170, 255, 0.18), 0 3px 12px rgba(30, 63, 90, 0.10);
+        transform: translateY(-6px) scale(1.025);
+        background-color: #e0f4ff;
+      /* transform: translateY(-5px); */
+    }
+
+    .certificate-card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 1em;
+    }
+
+    .certificate-card h3 {
+      margin: 0 0 0.5em;
+      color: #1e3f5a;
+      font-size: 1.2em;
+    }
+
+    .certificate-card p {
+      margin: 0;
+      color: #444;
+      font-size: 0.95em;
+    }
+
+    /* Lightbox styles */
+    #lightbox-modal {
+      display: none;
+      position: fixed;
+      z-index: 9999;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.85);
+      justify-content: center;
+      align-items: center;
+    }
+
+    #lightbox-img {
+      max-width: 90vw;
+      max-height: 90vh;
+      border-radius: 12px;
+      box-shadow: 0 4px 32px #000;
+    }
+  </style>
+</head>
+<body>
+    <div id="wrapper">
+      <header id="header">
+        <a href="index.html" class="logo"><strong>BACK</strong></a>
+        <!-- <a href="index.html" class="logo"><strong>Portfolio</strong></a> -->
+        <nav>
+          <a href="#menu">Menu</a>
+        </nav>
+      </header>
+      <!-- Menu -->
+      <nav id="menu">
+        <ul class="links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutMe.html">About Me</a></li>
+          <!-- <li><a href="certificates.html">Certificates</a></li> -->
+          <li><a href="projects.html">Projects</li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Main
+      <div id="main" class="alt">
+        <section id="about" class="inner">
+          <header class="major">
+            <h1>About Me</h1>
+          </header> -->
+
+  <section class="certificates-section">
+    <h1 class="certificates-title">My Certificates</h1>
+    <div class="certificates-grid">
+
+  <!-- jetir  -->
+      <div class="certificate-card reveal-tile">
+        <img src="./images/certificates/jetir.png" alt="Certificate 3">              
+        <h3>JETIR: Research paper</h3>
+        <p>Published a <b>research paper</b> of my final year project in <b>JETIR (UGC approved Journal)</b>.</p>
+      </div>
+
+  <!-- udemy java -->
+      <div class="certificate-card reveal-tile">
+        <img src="./images/certificates/udemy.png" alt="UDEMY">
+        <h3>Udemy: Java Foundations</h3>
+        <p>Completed Java fundamentals course covering all the basics and essentials of Java.</p>
+      </div>
+
+  <!-- JSP FSD -->
+      <div class="certificate-card reveal-tile">
+        <img src="./images/certificates/JSP.png" alt="Jspiders">
+        <h3>Jspiders: Java Full Stack Development</h3>
+        <p>Completed <b>Java full stack</b> development course covering Core Java, SQL, HTML, CSS, JS</p>
+      </div>
+
+  <!-- CAMBRIDGE ENGLISH -->
+      <div class="certificate-card reveal-tile">
+        <img src="./images/certificates/CAM_ENG.jpg" alt="Certificate 3">
+        <h3>University of Cambridge: Cambridge Engilsh</h3>
+        <p>Passed the Key Engilsh test, <b>Council of Europe Level A2</b>. Certificate awarded by <b>UNIVERSITY OF CAMBRIDGE, UNITED KINGDOM</b>.</p>
+      </div>
+  
+    <!-- leetcode 200d badge-->
+      <div class="certificate-card reveal-tile">
+        <img src="images/certificates/leetcode 200d.gif" alt="Certificate ">
+        <h3>LeetCode: 200 days badge</h3>
+        <p>Solved leetcode problems <b>200+ days</b> in the year 2024.</p>
+      </div>
+
+  <!-- DevMinds -->
+      <div class="certificate-card reveal-tile">
+        <img src="./images/certificates/Devminds.png" alt="Certificate 3">
+        <h3>DevMinds: Artificial Intelligence and Machine Learning</h3>
+        <p>Completed an on-site internship in the field of AI-ML with DevMinds as ML intern on various mini-projects and main project titled,<b>"CREDIT CARD FRAUD ANALYSIS"</b>.</p>
+      </div>
+
+  <!-- SimpliLearn -->
+      <div class="certificate-card reveal-tile">
+        <img src="./images/certificates/sl cloud.png" alt="Certificate 3">
+        <h3>SimpliLearn: Cloud Computing</h3>
+        <p>Explored the cloud computing concepts and completed the course successfully.</p>
+      </div>
+
+  <!-- COMEDKARES -->
+      <div class="certificate-card reveal-tile">
+        <img src="images/certificates/COMEDKARES.jpg" alt="Certificate 3">
+        <h3>COMEDKARES: Rapid Prototyping</h3>
+        <p>Completed summer internship on rapid prototyping held at Comedkares Innovation Hub.</p>
+      </div>
+
+  <!-- leetcode july badge-->
+      <div class="certificate-card reveal-tile">
+        <img src="images/certificates/leetcode july badge.gif" alt="Certificate ">
+        <h3>LeetCode: June 2024 badge</h3>
+        <p>Solved all the problem of the day in the month of July, 2024</p>
+      </div>
+ 
+
+  <!-- Helsinki AI -->
+      <div class="certificate-card reveal-tile">
+        <img src="images/certificates/certificate-elements-of-ai.png" alt="Certificate 3">
+        <h3>University of Helsinki: Elements of AI</h3>
+        <p>Completed <b>2 ECTS (European Credit Transfer and Accumulation System)</b> credits online course on Elements of AI by MinnaLearn & University of Helsinki.</p>
+      </div>
+
+<!-- leetcode 100d badge-->
+      <div class="certificate-card reveal-tile">
+        <img src="images/certificates/leetcode 100d.gif" alt="Certificate ">
+        <h3>LeetCode: 100 days badge</h3>
+        <p>Solved leetcode problems <b>100+ days</b> in the year 2024.</p>
+      </div>
+ 
+
+  <!-- LU py essentials -->
+      <div class="certificate-card reveal-tile">
+        <img src="images/certificates/Lu py esse.png" alt="Certificate ">
+        <h3>LetsUpgrade: Python programming essentials</h3>
+        <p>Attended a 3 days python programming essentials bootcamp conducted by LetsUpgrade.</p>
+      </div>
+
+  <!-- LU py 0 to hero -->
+      <div class="certificate-card reveal-tile">
+        <img src="images/certificates/LU py.png" alt="Certificate ">
+        <h3>LetsUpgrade: Python Zero to Hero</h3>
+        <p>Attended a 5 days python programming course conducted by LetsUpgrade..</p>
+      </div>
+
+  <!-- LU post API -->
+      <div class="certificate-card reveal-tile">
+        <img src="images/certificates/lu post api.png" alt="Certificate ">
+        <h3>LetsUpgrade: Postman API</h3>
+        <p>successfully completed Postman API fundamentals course.</p>
+      </div>
+
+  <!-- tjhack -->
+      <div class="certificate-card reveal-tile">
+        <img src="images/certificates/tjhack certi 2023.jpg" alt="Certificate ">
+        <h3>TJhackIT-2023</h3>
+        <p>Participated in a 24 hours hackathon conducted on <b>"Smart Solutions for Multidisciplinary challenges"</b>.</p>
+      </div>
+  
+    <!-- leetcode june badge-->
+      <div class="certificate-card reveal-tile">
+        <img src="images/certificates/leetcode june badge.gif" alt="Certificate ">
+        <h3>LeetCode: June 2024 badge</h3>
+        <p>Solved all the problem of the day in the month of June, 2024</p>
+      </div>
+
+  <!-- vi -->
+      <div class="certificate-card reveal-tile">
+        <img src="images/certificates/Vi.png" alt="Certificate ">
+        <h3>Vodafone Idea Foundation: Machine Learning </h3>
+        <p>successfully completed a course on Machine Learning basics conducted by Vodafone Idea Foundation.</p>
+      </div>
+
+  <!-- ratatype -->
+      <div class="certificate-card reveal-tile">
+        <img src="images/certificates/ratatype.png" alt="Certificate ">
+        <h3>Ratatype: Typing Test</h3>
+        <p>Silver certificate awarded for achieving a type speed of <b>54 wpm</b> (words per minute) with <b>98.2% accuraccy</b> .</p>
+      </div>
+
+    </section>
+  </div>
+
+
+    <!-- extra certificates -->
+
+    <section class="certificates-section">
+    <h1 class="certificates-title">Extracurricular Achievements</h1>
+    <div class="certificates-grid">
+
+  <!-- Certificate 9 -->
+      <div class="certificate-card reveal-tile">
+        <img src="images/certificates/extraneous/cam_talent.jpeg" alt="Certificate ">
+        <!-- <h3>Python for Data Science</h3> -->
+        <!-- <p>Explored data wrangling, visualization, and analysis using Python and Pandas.</p> -->
+      </div>
+<!-- Certificate 9 -->
+      <div class="certificate-card reveal-tile">
+        <img src="images/certificates/extraneous/WhatsApp Image 2025-08-02 at 12.02.32 PM.jpeg" alt="Certificate ">
+        <!-- <h3>Python for Data Science</h3> -->
+        <!-- <p>Explored data wrangling, visualization, and analysis using Python and Pandas.</p> -->
+      </div>
+<!-- Certificate 9 -->
+      <div class="certificate-card reveal-tile">
+        <img src="images/certificates/extraneous/WhatsApp Image 2025-08-02 at 12.03.10 PM.jpeg" alt="Certificate ">
+        <!-- <h3>Python for Data Science</h3> -->
+        <!-- <p>Explored data wrangling, visualization, and analysis using Python and Pandas.</p> -->
+      </div>
+  <!-- Certificate 9 -->
+      <div class="certificate-card reveal-tile">
+        <img src="images/certificates/extraneous/IV2023.jpg" alt="Certificate ">
+        <!-- <h3>Python for Data Science</h3> -->
+        <!-- <p>Explored data wrangling, visualization, and analysis using Python and Pandas.</p> -->
+      </div>
+  
+  <!-- Certificate 9 -->
+      <div class="certificate-card reveal-tile">
+        <img src="images/certificates/extraneous/Screenshot 2025-07-30 161301.png" alt="Certificate ">
+        <!-- <h3>Python for Data Science</h3> -->
+        <!-- <p>Explored data wrangling, visualization, and analysis using Python and Pandas.</p> -->
+      </div>
+  
+  <!-- Certificate 9 -->
+      <div class="certificate-card reveal-tile">
+        <img src="images/certificates/extraneous/WhatsApp Image 2025-08-02 at 12.02.43 PM.jpeg" alt="Certificate ">
+        <!-- <h3>Python for Data Science</h3> -->
+        <!-- <p>Explored data wrangling, visualization, and analysis using Python and Pandas.</p> -->
+      </div>
+  <!-- Certificate 9 -->
+      <div class="certificate-card reveal-tile">
+        <img src="images/certificates/extraneous/WhatsApp Image 2025-08-02 at 12.06.32 PM.jpeg" alt="Certificate ">
+        <!-- <h3>Python for Data Science</h3> -->
+        <!-- <p>Explored data wrangling, visualization, and analysis using Python and Pandas.</p> -->
+      </div>
+
+      <!-- Certificate 9 -->
+      <div class="certificate-card reveal-tile">
+        <img src="images/certificates/extraneous/WhatsApp Image 2025-08-02 at 12.03.18 PM.jpeg" alt="Certificate ">
+        <!-- <h3>Python for Data Science</h3> -->
+        <!-- <p>Explored data wrangling, visualization, and analysis using Python and Pandas.</p> -->
+      </div>
+
+ 
+  <!-- Certificate 9 -->
+      <div class="certificate-card reveal-tile">
+        <img src="images/certificates/extraneous/WhatsApp Image 2025-08-02 at 12.03.17 PM.jpeg" alt="Certificate ">
+        <!-- <h3>Python for Data Science</h3> -->
+        <!-- <p>Explored data wrangling, visualization, and analysis using Python and Pandas.</p> -->
+      </div>
+  <!-- Certificate 9 -->
+      <div class="certificate-card reveal-tile">
+        <img src="images/certificates/extraneous/WhatsApp Image 2025-08-02 at 12.03.18 PM (1).jpeg" alt="Certificate ">
+        <!-- <h3>Python for Data Science</h3> -->
+        <!-- <p>Explored data wrangling, visualization, and analysis using Python and Pandas.</p> -->
+      </div>
+  <!-- Certificate 9 -->
+      <div class="certificate-card reveal-tile">
+        <img src="images/certificates/extraneous/WhatsApp Image 2025-08-02 at 12.03.18 PM (2).jpeg" alt="Certificate ">
+        <!-- <h3>Python for Data Science</h3> -->
+        <!-- <p>Explored data wrangling, visualization, and analysis using Python and Pandas.</p> -->
+      </div>
+   <!-- Certificate 9 -->
+      <div class="certificate-card reveal-tile">
+        <img src="images/certificates/extraneous/WhatsApp Image 2025-08-02 at 12.03.12 PM.jpeg" alt="Certificate ">
+        <!-- <h3>Python for Data Science</h3> -->
+        <!-- <p>Explored data wrangling, visualization, and analysis using Python and Pandas.</p> -->
+      </div>
+  
+  <!-- Certificate 9 -->
+      <div class="certificate-card reveal-tile">
+        <img src="images/certificates/extraneous/WhatsApp Image 2025-08-02 at 12.03.19 PM.jpeg" alt="Certificate ">
+        <!-- <h3>Python for Data Science</h3> -->
+        <!-- <p>Explored data wrangling, visualization, and analysis using Python and Pandas.</p> -->
+      </div>
+  <!-- Certificate 9 -->
+      <div class="certificate-card reveal-tile">
+        <img src="images/certificates/extraneous/WhatsApp Image 2025-08-02 at 12.03.20 PM (1).jpeg" alt="Certificate ">
+        <!-- <h3>Python for Data Science</h3> -->
+        <!-- <p>Explored data wrangling, visualization, and analysis using Python and Pandas.</p> -->
+      </div>
+  <!-- Certificate 9 -->
+      <div class="certificate-card reveal-tile">
+        <img src="images/certificates/extraneous/WhatsApp Image 2025-08-02 at 12.03.20 PM.jpeg" alt="Certificate ">
+        <!-- <h3>Python for Data Science</h3> -->
+        <!-- <p>Explored data wrangling, visualization, and analysis using Python and Pandas.</p> -->
+      </div>
+  
+  <!-- Certificate 9 -->
+      <div class="certificate-card reveal-tile">
+        <img src="images/certificates/extraneous/WhatsApp Image 2025-08-02 at 12.03.19 PM (1).jpeg" alt="Certificate ">
+        <!-- <h3>Python for Data Science</h3> -->
+        <!-- <p>Explored data wrangling, visualization, and analysis using Python and Pandas.</p> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Scroll Indicator -->
+  <div class="scroll-indicator" id="scrollIndicator">
+    Scroll to see more certificates
+  </div>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <ul class="icons">
+      <li><a href="https://mail.google.com/mail/?view=cm&to=nby.nithin@gmail.com" class="icon solid fa-envelope" target="_blank"><span class="label">Email</span></a></li>
+      <li><a href="https://www.linkedin.com/in/nithin-b-y-0484a0236" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+      <li><a href="https://github.com/nit-codes" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+      <li><a href="https://www.instagram.com/nithin.b.y/" class="icon brands fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
+    </ul>
+    <ul class="copyright">
+      <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">
+  <img alt="Creative Commons License" style="border-width:0; height: 30px;" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" />
+</a>
+<p style="font-size: 0.85em;">
+  This portfolio by <strong>Nithin B Y</strong> is licensed under 
+  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a>.
+</p>
+
+      <li><p style="font-size: 0.8em;">© 2025 Nithin B Y</p>
+</li>
+    </ul>
+  </footer>
+  
+  <script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Show lightbox on image click
+  document.querySelectorAll('.certificate-card img').forEach(function(img) {
+    img.style.cursor = 'zoom-in';
+    img.addEventListener('click', function() {
+      document.getElementById('lightbox-img').src = img.src;
+      document.getElementById('lightbox-modal').style.display = 'flex';
+    });
+  });
+  // Hide lightbox on click
+  document.getElementById('lightbox-modal').addEventListener('click', function() {
+    this.style.display = 'none';
+    document.getElementById('lightbox-img').src = '';
+  });
+
+  // Scroll indicator functionality
+  const scrollIndicator = document.getElementById('scrollIndicator');
+  
+  // Hide scroll indicator when user scrolls down
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 100) {
+      scrollIndicator.classList.add('hidden');
+    } else {
+      scrollIndicator.classList.remove('hidden');
+    }
+  });
+
+  // Hide scroll indicator when user clicks on it
+  scrollIndicator.addEventListener('click', function() {
+    scrollIndicator.classList.add('hidden');
+  });
+
+  // Hide scroll indicator after 5 seconds
+  setTimeout(function() {
+    scrollIndicator.classList.add('hidden');
+  }, 5000);
+});
+</script>
+<script>
+  document.addEventListener("contextmenu", (e) => e.preventDefault());
+</script>
+
+<!-- Lightbox Modal -->
+<div id="lightbox-modal" style="display:none;position:fixed;z-index:9999;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.85);justify-content:center;align-items:center;">
+  <img id="lightbox-img" src="" alt="Certificate" style="max-width:90vw;max-height:90vh;border-radius:12px;box-shadow:0 4px 32px #000;">
+</div>
+    </div>
+</body>
+</html>
