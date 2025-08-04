@@ -96,39 +96,39 @@
             <p>Navigate through my story, achievements, projects, and get in touch!</p>
           </div>
           <div class="tiles-grid">
-            <article class="tile-card reveal-tile">
+            <article class="tile-card reveal-tile" onclick="location.href='aboutMe.html'">
               <span class="image">
                 <img src="images/about.png" alt="About Me" />
               </span>
               <header class="major">
-                <h3><a href="aboutMe.html" class="link">About Me</a></h3>
+                <h3>About Me</h3>
                 <p>Who I am and what I love to do</p>
               </header>
             </article>
-            <article class="tile-card reveal-tile">
+            <article class="tile-card reveal-tile" onclick="location.href='certificates.html'">
               <span class="image">
                 <img src="./images/certificate.png" alt="Certificates" />
               </span>
               <header class="major">
-                <h3><a href="certificates.html" class="link">Certificates</a></h3>
+                <h3>Certificates</h3>
                 <p>My achievements and credentials</p>
               </header>
             </article>
-            <article class="tile-card reveal-tile">
+            <article class="tile-card reveal-tile" onclick="location.href='projects.html'">
               <span class="image">
                 <img src="images/project.png" alt="Projects" />
               </span>
               <header class="major">
-                <h3><a href="./projects.html" class="link">Projects</a></h3>
+                <h3>Projects</h3>
                 <p>Some of the projects I’ve built</p>
               </header>
             </article>
-            <article class="tile-card reveal-tile">
+            <article class="tile-card reveal-tile" onclick="location.href='contact.html'">
               <span class="image">
                 <img src="images/contact.png" alt="Contact" />
               </span>
               <header class="major">
-                <h3><a href="./contact.html" class="link">Contact</a></h3>
+                <h3>Contact</h3>
                 <p>Reach out to work or collaborate</p>
               </header>
             </article>
@@ -224,6 +224,19 @@
 </script>
 <script>
   document.addEventListener("contextmenu", (e) => e.preventDefault());
+</script>
+<script>
+  // Show message if screen width is less than 768px (typical phones)
+  if (window.innerWidth < 768) {
+    document.body.innerHTML = `
+      <div style="display: flex; align-items: center; justify-content: center; height: 100vh; background: #f0f9ff; text-align: center; padding: 2em;">
+        <div>
+          <h2 style="color: #0077cc;">Please open this website on a desktop or tablet</h2>
+          <p>This site is optimized for larger screens.</p>
+        </div>
+      </div>
+    `;
+  }
 </script>
 
 
