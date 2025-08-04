@@ -1,89 +1,245 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
-
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/12.0.0/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/12.0.0/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/12.0.0/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/12.0.0/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/12.0.0/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/12.0.0/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/12.0.0/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/12.0.0/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/12.0.0/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/12.0.0/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
+    <title>Nithin's Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/theme-light.css" />
+    <style>
+      .tile-card:hover {
+        box-shadow: 0 8px 32px rgba(0, 170, 255, 0.18), 0 3px 12px rgba(30, 63, 90, 0.10);
+        transform: translateY(-6px) scale(1.025);
+        background-color: #e0f4ff;
       }
+      /* trial */
+
+      .tile-card {
+    transform-origin: center;
+    margin-bottom: 2em;
+  }
+
+  /* Reduce size of large tiles */
+  .tiles article:nth-child(4n - 1),
+  .tiles article:nth-child(4n - 2) {
+    width: 55% !important;
+  }
+
+  /* Reduce size of others slightly */
+  .tiles article:nth-child(4n),
+  .tiles article:nth-child(4n - 3) {
+    width: 40% !important;
+  }
+
+  /* Optional: make sure tiles are centered within container */
+  .tiles-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2em 1em;
+  }
+
+  .tiles {
+    justify-content: center;
+    column-gap: 2rem;
+    row-gap: 2rem;
+  }
+
     </style>
   </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+  <body class="is-preload">
+    <div id="wrapper">
+
+      <!-- Header -->
+      <header id="header" class="alt">
+        <!-- <a href="index.html" class="logo"><strong>My Portfolio</strong></a> -->
+        <nav>
+          <a href="#menu">Menu</a>
+        </nav>
+      </header>
+
+      <!-- Menu -->
+      <nav id="menu">
+        <ul class="links">
+          <!-- <li><a href="index.html">Home</a></li> -->
+          <li><a href="aboutMe.html">About Me</a></li>
+          <li><a href="certificates.html">Certificates</a></li>
+          <li><a href="projects.html">Projects</li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Banner -->
+      <section id="banner" class="major">
+        <div class="inner">
+          <!-- <div class="inner animated-banner">
+  <header class="major">
+    <h1>Hi, I'm Nithin 👋</h1>
+  </header>
+  <div class="typed-text"></div>
+</div> -->
+	  <div class="inner banner-animated">
+  <header class="major">
+    <h1 class="slide-in-title">
+      Hi, I'm Nithin <span class="wave loop">👋</span>
+    </h1>
+  </header>
+  <div class="typed-text"></div>
+</div>
+</div>
+      </section>
+
+      <!-- Main -->
+      <div id="main">
+        <section class="tiles-section reveal-section">
+          <div class="tiles-heading">
+            <h2>Explore My Portfolio</h2>
+            <p>Navigate through my story, achievements, projects, and get in touch!</p>
+          </div>
+          <div class="tiles-grid">
+            <article class="tile-card reveal-tile" onclick="location.href='aboutMe.html'">
+              <span class="image">
+                <img src="images/about.png" alt="About Me" />
+              </span>
+              <header class="major">
+                <h3>About Me</h3>
+                <p>Who I am and what I love to do</p>
+              </header>
+            </article>
+            <article class="tile-card reveal-tile" onclick="location.href='certificates.html'">
+              <span class="image">
+                <img src="./images/certificate.png" alt="Certificates" />
+              </span>
+              <header class="major">
+                <h3>Certificates</h3>
+                <p>My achievements and credentials</p>
+              </header>
+            </article>
+            <article class="tile-card reveal-tile" onclick="location.href='projects.html'">
+              <span class="image">
+                <img src="images/project.png" alt="Projects" />
+              </span>
+              <header class="major">
+                <h3>Projects</h3>
+                <p>Some of the projects I’ve built</p>
+              </header>
+            </article>
+            <article class="tile-card reveal-tile" onclick="location.href='contact.html'">
+              <span class="image">
+                <img src="images/contact.png" alt="Contact" />
+              </span>
+              <header class="major">
+                <h3>Contact</h3>
+                <p>Reach out to work or collaborate</p>
+              </header>
+            </article>
+          </div>
+        </section>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <div class="scroll-indicator" id="scrollIndicator">
+        Scroll to explore more
+      </div>
+
+      <!-- Footer -->
+      <footer id="footer">
+        <ul class="icons">
+          <li><a href="https://mail.google.com/mail/?view=cm&to=nby.nithin@gmail.com" class="icon solid fa-envelope" target="_blank"><span class="label">Email</span></a></li>
+          <li><a href="https://www.linkedin.com/in/nithin-b-y-0484a0236" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+          <li><a href="https://github.com/nit-codes" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+          <li><a href="https://www.instagram.com/nithin.b.y/" class="icon brands fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
+        </ul>
+        <ul class="copyright">
+          <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">
+  <img alt="Creative Commons License" style="border-width:0; height: 30px;" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" />
+</a>
+<p style="font-size: 0.85em;">
+  This portfolio by <strong>Nithin B Y</strong> is licensed under 
+  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a>.
+</p>
+
+          <li><p style="font-size: 0.8em;">© 2025 Nithin B Y</p>
+</li>
+        </ul>
+      </footer>
+
+
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
+	<script>
+  window.addEventListener("load", function () {
+    const wave = document.querySelector(".wave");
+    const title = document.querySelector(".slide-in-title");
+
+    // Trigger wave emoji once animation of the title ends
+    title.addEventListener("animationend", () => {
+      wave.classList.add("wave-once");
+    });
+
+    // Scroll indicator functionality
+    const scrollIndicator = document.getElementById('scrollIndicator');
+    
+    // Hide scroll indicator when user scrolls down
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 100) {
+        scrollIndicator.classList.add('hidden');
+      } else {
+        scrollIndicator.classList.remove('hidden');
+      }
+    });
+
+    // Hide scroll indicator when user clicks on it
+    scrollIndicator.addEventListener('click', function() {
+      scrollIndicator.classList.add('hidden');
+    });
+
+    // Hide scroll indicator after 5 seconds
+    setTimeout(function() {
+      scrollIndicator.classList.add('hidden');
+    }, 5000);
+  });
+</script>
+
+<!-- Typed.js for subheading -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+  new Typed(".typed-text", {
+  strings: [ "Tech Enthusiast ⚙️", "Problem Solver 🔧"],
+  typeSpeed: 60,
+  backSpeed: 30,
+  startDelay: 1500,
+  loop: true,
+  showCursor: false // 👈 disables the blinking cursor
+});
+
+</script>
+<script>
+  document.addEventListener("contextmenu", (e) => e.preventDefault());
+</script>
+<script>
+  // Show message if screen width is less than 768px (typical phones)
+  if (window.innerWidth < 768) {
+    document.body.innerHTML = `
+      <div style="display: flex; align-items: center; justify-content: center; height: 100vh; background: #f0f9ff; text-align: center; padding: 2em;">
+        <div>
+          <h2 style="color: #0077cc;">Please open this website on a desktop or tablet</h2>
+          <p>This site is under optimization for mobile screen and is optimized for larger screens.</p>
+        </div>
+      </div>
+    `;
+  }
+</script>
+
+
+	
   </body>
 </html>
